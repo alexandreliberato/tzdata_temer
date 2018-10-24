@@ -1,0 +1,12 @@
+Para corrigir a data/hora dos sistemas que utilizam Java vamos precisar atualizar os timezones da JDK/JRE utilizada.
+
+Ferramenta:
+
+http://www.oracle.com/technetwork/java/javase/tzupdater-readme-136440.html
+
+
+cd C:\dev\tools\tzupdater
+C:\dev\jdk8\bin\java -jar tzupdater.jar -f -l file:///C:\dev\tools\timezones_last.zip
+
+* utilize o JDK/JRE que deseja atualizar para executar a ferramenta
+** esta versão já contém correção para o erro "Failed while parsing file '/tmp/tz.tmp_6/asia'"
